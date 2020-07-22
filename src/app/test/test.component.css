@@ -1,0 +1,28 @@
+.Main-Content{
+  background-color: #ff4e58;
+  width:50%;
+  height:500px;
+  margin-left:25%;
+  margin-right:25%;
+  margin-top: 10%;
+
+
+}
+
+
+.Main-Content h1{
+  padding-top: 5%;
+  font-size: 60px;
+  text-align: center;
+}
+
+.Main-Content h2{
+  font-size: 60px;
+  text-align: center;
+}
+
+
+
+
+
+
