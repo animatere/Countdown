@@ -1,0 +1,33 @@
+.Main-Content {
+  background-image: url(~src/resources/red_4k.jpg);
+  /*background-color: orangered;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 50%;
+  min-height: 780px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.Main-Content h1 {
+  padding-top: 5%;
+  font: 10vh 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.Main-Content h2 {
+  font: 6vh 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.Main-Content .btn-primary {
+  margin-top: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  height: 40px;
+  width: 20%;
+
+}

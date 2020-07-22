@@ -1,7 +1,11 @@
 h1{
   text-align:center;
-  font-size: 100px;
   margin-left:25%;
   margin-right:25%;
-  background-color: #ff4e58;
+  margin-top: 1%;
+  font: 10vh 'Orbitron', sans-serif;
+  background-image: url(~src/resources/red_4k.jpg);
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  background-attachment: fixed;
 }

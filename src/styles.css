@@ -1,4 +1,5 @@
 body{
   background-image: url(~src/resources/unicorn.gif);
+  background-attachment: fixed;
 }
 
