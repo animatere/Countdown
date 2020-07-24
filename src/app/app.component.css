@@ -3,6 +3,7 @@ h1{
   margin-left:25%;
   margin-right:25%;
   margin-top: 1%;
+  padding:30px;
   font: 10vh 'Orbitron', sans-serif;
   background-image: url(~src/resources/red_4k.jpg);
   /*background-repeat: no-repeat;*/

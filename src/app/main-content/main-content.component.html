@@ -1,9 +1,11 @@
 <html>
 
-
 <div class="Main-Content">
+
+  <h1>Countdown</h1>
   <button class="btn btn-primary" *ngIf="!showTimer" (click)="openTimer()">Click</button>
   <div class="Timer" *ngIf="showTimer">
+
     <h1>{{hours}}:{{minutes}}:{{seconds}}</h1>
     <h2> Prepare to Die!</h2>
   </div>
