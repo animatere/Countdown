@@ -5,11 +5,11 @@
   <h1>Countdown</h1>
 
   <!--  <button class="btn btn-primary" (click)="startTimer()">Show New Timer</button>-->
-  <button class="btn btn-danger" *ngIf="!showTimer" (click)="startTimer()">Click</button>
+  <button class="btn btn-warning" *ngIf="!showTimer" (click)="startTimer()">Click</button>
 
   <div class="Timer" *ngIf="showTimer">
 
-    <h1>{{counter.hours}}:{{counter.min}}:{{counter.sec}}</h1>
+    <h1>{{counter.hrs}}:{{counter.min}}:{{counter.sec}}</h1>
 
     <h2> Prepare to Die!</h2>
   </div>

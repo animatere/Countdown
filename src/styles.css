@@ -1,5 +1,8 @@
 body{
-  background-image: url(~src/resources/unicorn.gif);
-  background-attachment: fixed;
+  background-image: url(~src/resources/S5vnx6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  width:100%;
 }
 

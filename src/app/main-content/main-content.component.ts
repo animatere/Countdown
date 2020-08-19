@@ -7,30 +7,38 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MainContentComponent implements OnInit {
 
-  hours = 1;
-  minutes = 0;
-  seconds = 3;
+  hours = this.getRandomInt(100);
+  minutes = this.getRandomInt(25);
+  seconds = this.getRandomInt(25);
   showTimer = false;
-  counter: { hours: number, min: number, sec: number };
+  counter: { hrs: number, min: number, sec: number };
 
   constructor() {
   }
 
+  getRandomInt(max){
+    return Math.floor(Math.random() * Math.floor(max))
+  }
+
   startTimer() {
     this.showTimer = true;
-    this.counter = {hours: this.hours, min: this.minutes, sec: this.seconds};
+    this.counter = {hrs: this.hours, min: this.minutes, sec: this.seconds};
     const intervalId = setInterval(() => {
 
       if (this.counter.sec - 1 === -1) {
         if (this.counter.min > 0) {
           this.counter.min -= 1;
         }
+        else if(this.counter.hrs >0){
+          this.counter.hrs -=1;
+          this.counter.min = 59;
+        }
         this.counter.sec = 59;
       } else {
         this.counter.sec -= 1;
       }
 
-      if (this.counter.hours === 0 && this.counter.min === 0 && this.counter.sec === 0) {
+      if (this.counter.hrs === 0 && this.counter.min === 0 && this.counter.sec === 0) {
         clearInterval(intervalId);
       }
 
