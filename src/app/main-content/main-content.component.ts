@@ -7,6 +7,10 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MainContentComponent implements OnInit {
 
+  day: number;
+  month: number;
+  year: number;
+
   hours = this.getRandomInt(100);
   minutes = this.getRandomInt(25);
   seconds = this.getRandomInt(25);

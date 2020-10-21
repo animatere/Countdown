@@ -5,7 +5,15 @@
   <h1>Countdown</h1>
 
   <!--  <button class="btn btn-primary" (click)="startTimer()">Show New Timer</button>-->
-  <button class="btn btn-warning" *ngIf="!showTimer" (click)="startTimer()">Click</button>
+
+  <div class="Birthday-handler" *ngIf="!showTimer">
+    <h2>What is your Birthday?</h2>
+  <input type="text" id="day" name="Day.." placeholder="Day..">
+  <input type="text" id="month" name="Month.." placeholder="Month..">
+  <input type="text" id="year" name="Year.." placeholder="Year..">
+  </div>
+
+  <button class="btn btn-warning" *ngIf="!showTimer" (click)="startTimer()" >Click</button>
 
   <div class="Timer" *ngIf="showTimer">
 
